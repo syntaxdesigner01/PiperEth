@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+    <title>Ether Balance Checker</title>
+
+</head>
+
+<body class="font-bold text-red-400 ">
+
+    <div class="w-screen h-screen flex flex-col justify-center items-center space-y-4 ">
+        <h1 class="text-center py-10 text-2xl">Ether Balance Checker</h1>
+
+        <form action="">
+            <input type="text" placeholder="enter address" class="outline-none border-2 rounded-md py-2 px-10" >
+            <button type="submit" class="bg-green-500 py-2 text-black px-4">Get Balance</button>
+        </form>
+
+            <div class="loader hidden">
+                <img src="loader.gif" alt="" width="200px">
+            </div>
+
+        <div >
+            <p>ETH BALANCE: </p>
+        </div>
+    </div>
+
+    <!-- <script src="./account.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
